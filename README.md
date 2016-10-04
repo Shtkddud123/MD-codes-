@@ -1,4 +1,3 @@
 # MD-codes-
 
-I've included files I've used during the course of my PhD - some of them involve calculating the stress and pressor
-tensor of a MD simulation of bilayers. 
+StressPython - Includes some of the Python codes used for calculating the stress tensors of the MD simuations I used.
