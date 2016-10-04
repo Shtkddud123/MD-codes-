@@ -1,0 +1,25 @@
+
+Hi Sang,
+> 
+> here are two little python scripts for analysing the stress tensor file
+> (stress. whatever) from lammps. The first (extractStress.py) simply goes
+> through the stress tensor file and for each data set (single timestep)
+>  converts the stress tensor data into the pressure tensor and writes the
+>  data from each timestep to a separate file. To run it use
+> python ./extractStress.py <input file> <output file>
+> and it will produce files called <output file>.XXXXX (timestep). This may
+> produce quite a few files for your longer runs.
+> 
+> The second (blockStress.py) is quite similar but it block averages the
+>  stress tensor data (averages together a number of different datasets).
+>  This is run by python ./blockStress.py <input file> <output file> <no of
+>  data sets to average together>
+> 
+> In both cases the format of the output files are
+> z pxx pyy pzz pxy pxz pyz pzz-(pxx+pyy)/2
+> where pab are the components of the pressure tensor (integrating the final
+> column should give the surface tension although this is very sensitive to
+> noise).
+> 
+> regards,
+> David
